@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Contact - wWw.BaxAndrei.Ro - Script Contact.</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body style="background: url(http://www.baxandrei.ro/site/img/pattern) repeat;">
+<div class="container">
+		<div class="row">
+
+<div class="col-lg-12" style="float: none; margin: 0 auto;">
+
+<br><br><br>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title text-center">Contacteaza-ne!</h3>
+  </div>
+  <div class="panel-body" style="margin-left:5px; margin-right:5px;">
+
+  <form method="post" action="contact.php">
+  
+    <div class="form-group">
+      <label for="nume" class="">Numele Dvs.</label>
+        <input type="text" required class="form-control" id="nume" name="nume" placeholder="Numele Dvs.">
+      </div>
+	  
+    <div class="form-group">
+      <label for="nume" class="">Adresa Dvs. de E-Mail</label>
+        <input type="email" required class="form-control" id="email" name="email" placeholder="Adresa Dvs. de E-Mail">
+      </div>
+	  
+    <div class="form-group">
+      <label for="nume" class="">Subiectul mesajului</label>
+        <input type="text" class="form-control" id="subiect" name="subiect" required placeholder="Subiectul mesajului">
+      </div>
+  
+    <div class="form-group">
+      <label for="nume" class="">Mesajul Dvs.</label>
+        <textarea class="form-control" rows="5" required style="resize:none;" id="mesaj" name="mesaj" placeholder="Mesajul Dvs."></textarea>
+      </div>
+	  
+    <div class="form-group col-lg-8 text-center">
+        <button class="form-control btn btn-success" id="trimite" name="trimite" value="trimite_contact">Trimite Mesajul</button>
+      </div>
+	  
+  </form>
+	  
+<center><a href="http://baxandrei.ro" class="btn btn-info">« Mai multe Scripturi PHP »</a></center>
+
+</div>
+			
+  </div>
+</div>
+			
+		</div>
+</div>
+</body>
+</html>
