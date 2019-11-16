@@ -1,0 +1,33 @@
+<script type='text/javascript' src='https://www.baxandrei.ro/wp-includes/js/jquery/jquery.js'></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="__ADRESA_FISIERE_SCRIPT__/contact.js"></script>
+<link rel="stylesheet" href="__ADRESA_FISIERE_SCRIPT__/contact.css">
+<form id="formular_contact_baxandreiro_form">
+	<label class="formular_contact_baxandreiro_label" for="formular_contact_baxandreiro_nume">Nume:</label>
+	<input type="text" placeholder="Va rugam sa introduceti numele." required="" autocomplete="off" class="formular_contact_baxandreiro" id="formular_contact_baxandreiro_nume">
+	<br>
+	<label class="formular_contact_baxandreiro_label" for="formular_contact_baxandreiro_email">E-mail:</label>
+	<input type="email" placeholder="Va rugam sa specificati adresa de mail." required="" class="formular_contact_baxandreiro" id="formular_contact_baxandreiro_email">
+	<br>
+	<label class="formular_contact_baxandreiro_label" for="formular_contact_baxandreiro_departament">Departament:</label>
+	<select class="formular_contact_baxandreiro" required="" id="formular_contact_baxandreiro_departament">
+		<option value="Departament pentru contact">Departament pentru contact</option>
+		<option value="Departament pentru probleme">Departament pentru probleme</option>
+		<option value="Departament pentru reclamatii si abuzuri">Departament pentru reclamatii si abuzuri</option>
+		<option value="Departament pentru parteneriate">Departament pentru parteneriate</option>
+		<option value="Departament pentru sugestii">Departament pentru sugestii</option>
+		<option value="Departament pentru CDN">Departament pentru CDN</option>
+	</select>
+	<br>
+	<label class="formular_contact_baxandreiro_label" for="formular_contact_baxandreiro_subiect">Subiect:</label>
+	<input type="text" required="" placeholder="Va rugam sa specificati subiectul mesajului." class="formular_contact_baxandreiro" id="formular_contact_baxandreiro_subiect">
+	<br>
+	<label class="formular_contact_baxandreiro_label" for="formular_contact_baxandreiro_mesaj">Mesaj:</label>
+	<textarea required="" rows="5" placeholder="Va rugam sa introduceti un mesaj." class="formular_contact_baxandreiro" id="formular_contact_baxandreiro_mesaj"></textarea>
+	<br>
+	<center>
+		<button type="submit" id="formular_contact_baxandreiro_submit" class="formular_contact_baxandreiro trimite g-recaptcha" data-sitekey="__CHEIE_RECAPTCHA__" data-callback="trimite_formular_contact"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Trimite</button>
+	</center>
+</form>
+<br>
+<div id="formular_contact_baxandreiro_alert"></div>
