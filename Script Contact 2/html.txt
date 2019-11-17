@@ -26,7 +26,7 @@
 	<textarea required="" rows="5" placeholder="Va rugam sa introduceti un mesaj." class="formular_contact_baxandreiro" id="formular_contact_baxandreiro_mesaj"></textarea>
 	<br>
 	<center>
-		<button type="submit" id="formular_contact_baxandreiro_submit" class="formular_contact_baxandreiro trimite g-recaptcha" data-sitekey="__CHEIE_RECAPTCHA__" data-callback="trimite_formular_contact"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Trimite</button>
+		<button type="submit" id="formular_contact_baxandreiro_submit" class="formular_contact_baxandreiro trimite g-recaptcha" data-sitekey="__CHEIE_RECAPTCHA__" data-expired-callback="recaptcha_expirat" data-callback="trimite_formular_contact"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Trimite</button>
 	</center>
 </form>
 <br>

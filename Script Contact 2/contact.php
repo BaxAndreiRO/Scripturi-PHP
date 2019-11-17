@@ -35,7 +35,7 @@ function verifica_grecaptcha($cod,$ip) {
 
 if(empty($_POST['recaptcha']) || empty($_POST['nume']) || empty($_POST['email']) || empty($_POST['departament']) || empty($_POST['subiect']) || empty($_POST['mesaj'])) {
 	$campuri_necesare = '';
-	if(empty($_POST['recaptcha'])) { exit('{"eroare": true,"mesaj_eroare": "Se pare ca ai fost detectat ca fiind un robot spam."}'); }
+	if(empty($_POST['recaptcha'])) { exit('{"eroare": true,"mesaj_eroare": "Va rugam sa efectuati verificarea de securitate."}'); }
 	if(empty($_POST['nume'])) { $campuri_necesare = '"formular_contact_baxandreiro_nume",'; }
 	if(empty($_POST['email'])) { $campuri_necesare = $campuri_necesare.'"formular_contact_baxandreiro_email",'; }
 	if(empty($_POST['departament'])) { $campuri_necesare = $campuri_necesare.'"formular_contact_baxandreiro_departament",'; }

@@ -2,6 +2,10 @@ const setari_script_contact = {
 	"adresa_fisier_contact":"http://exemplu.ro/contact/contact.php"
 };
 
+const recaptcha_expirat = () => {
+	location.reload();
+}
+
 const creare_alert_status = (clasa_status,mesaj,selector,timeout_secunde) => {
 	var identificator_element = Math.floor(Math.random() * 10000000000);
 	var mesaj_alert = '<div class="alert alert-'+clasa_status+'" id="alerta_'+identificator_element+'" role="alert">\
