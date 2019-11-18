@@ -64,7 +64,7 @@ function trimite_formular_contact(cod_recaptcha) {
 		beforeSend: () => {
 			jQuery("#formular_contact_baxandreiro_alert").html('');
 			creare_alert_status('info','Mesaj in curs de trimitere...','#formular_contact_baxandreiro_alert',5);
-			jQuery("#formular_contact_baxandreiro_submit").html('<i class="fas fa-circle-notch fa-spin"></i>');
+			jQuery("#formular_contact_baxandreiro_submit").html('<i class="fa fa-circle-o-notch fa-spin"></i>');
 			jQuery('#formular_contact_baxandreiro_nume').attr('readonly', true);
 			jQuery('#formular_contact_baxandreiro_email').attr('readonly', true);
 			jQuery('#formular_contact_baxandreiro_departament').attr('disabled', true);
