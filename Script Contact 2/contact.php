@@ -135,7 +135,7 @@ $continutul_mesajului = '<style>
 $subiect_email = $_POST['subiect']." - Mesaj nou de contact de pe ".$nume_site;
 $headers = "From: ".$_POST['nume']." <".$_POST['email'].">\n";
 $headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+$headers .= "Content-Type: text/html; charset=utf-8\r\n";
 $headers .= "X-Priority: 1\r\n";
 $headers .= "X-MSMail-Priority: High\r\n";
 $headers .= "X-Mailer: ".$nume_site." Mail Service\r\n";
